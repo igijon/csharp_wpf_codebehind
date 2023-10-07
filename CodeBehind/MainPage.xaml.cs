@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace CodeBehind
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica de interacción para MainPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class MainPage : Page
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            lblTitle.Text = "Mi título";
+            lblContent.Text = "Mi contenido";
         }
     }
 }
